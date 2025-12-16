@@ -45,11 +45,11 @@ export default function Locations() {
                     >
                         {/* Address Card */}
                         <motion.div
-                            className="glass-dark backdrop-blur-xl p-8 rounded-2xl hover-lift group"
+                            className="glass-dark backdrop-blur-xl p-8 rounded-2xl hover-lift group h-full flex flex-col"
                             whileHover={{ scale: 1.02 }}
                             transition={{ duration: 0.3 }}
                         >
-                            <div className="flex items-start space-x-5">
+                            <div className="flex items-start space-x-5 flex-grow">
                                 <div className="w-14 h-14 gradient-gold rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg group-hover:shadow-yellow-500/50 transition-shadow">
                                     <MapPin className="h-7 w-7 text-white" />
                                 </div>
@@ -63,11 +63,11 @@ export default function Locations() {
 
                         {/* Hours Card */}
                         <motion.div
-                            className="glass-dark backdrop-blur-xl p-8 rounded-2xl hover-lift group"
+                            className="glass-dark backdrop-blur-xl p-8 rounded-2xl hover-lift group h-full flex flex-col"
                             whileHover={{ scale: 1.02 }}
                             transition={{ duration: 0.3 }}
                         >
-                            <div className="flex items-start space-x-5">
+                            <div className="flex items-start space-x-5 flex-grow">
                                 <div className="w-14 h-14 gradient-gold rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg group-hover:shadow-yellow-500/50 transition-shadow">
                                     <Clock className="h-7 w-7 text-white" />
                                 </div>
@@ -87,11 +87,11 @@ export default function Locations() {
 
                         {/* Contact Card */}
                         <motion.div
-                            className="glass-dark backdrop-blur-xl p-8 rounded-2xl hover-lift group"
+                            className="glass-dark backdrop-blur-xl p-8 rounded-2xl hover-lift group h-full flex flex-col"
                             whileHover={{ scale: 1.02 }}
                             transition={{ duration: 0.3 }}
                         >
-                            <div className="flex items-start space-x-5">
+                            <div className="flex items-start space-x-5 flex-grow">
                                 <div className="w-14 h-14 gradient-gold rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg group-hover:shadow-yellow-500/50 transition-shadow">
                                     <Phone className="h-7 w-7 text-white" />
                                 </div>

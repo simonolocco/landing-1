@@ -103,9 +103,9 @@ export default function MenuHighlights() {
                         <motion.div
                             key={index}
                             variants={itemVariants}
-                            className="group relative"
+                            className="group relative h-full"
                         >
-                            <div className="relative bg-white rounded-2xl overflow-hidden shadow-lg hover-lift hover-glow transition-all duration-300">
+                            <div className="relative bg-white rounded-2xl overflow-hidden shadow-lg hover-lift hover-glow transition-all duration-300 h-full flex flex-col">
                                 {/* Badge */}
                                 <div className="absolute top-4 right-4 z-10">
                                     <span className="px-3 py-1 text-xs font-bold text-white gradient-gold rounded-full shadow-lg">
@@ -114,7 +114,7 @@ export default function MenuHighlights() {
                                 </div>
 
                                 {/* Image */}
-                                <div className="h-56 overflow-hidden relative">
+                                <div className="h-56 overflow-hidden relative flex-shrink-0">
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent z-10"></div>
                                     <img
                                         src={item.image}
@@ -124,7 +124,7 @@ export default function MenuHighlights() {
                                 </div>
 
                                 {/* Content */}
-                                <div className="p-6">
+                                <div className="p-6 flex flex-col flex-grow">
                                     <div className="flex justify-between items-start mb-3">
                                         <h3 className="font-bold text-xl text-coffee-900 group-hover:text-yellow-700 transition-colors">
                                             {item.name}
@@ -133,15 +133,15 @@ export default function MenuHighlights() {
                                             {item.price}
                                         </span>
                                     </div>
-                                    <p className="text-sm text-coffee-600 leading-relaxed">
+                                    <p className="text-sm text-coffee-600 leading-relaxed mb-4 flex-grow">
                                         {item.description}
                                     </p>
 
                                     {/* Hover indicator */}
-                                    <div className="mt-4 flex items-center text-yellow-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                        <span className="text-sm font-semibold">Ver más</span>
-                                        <svg className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                    <div className="mt-auto flex items-center text-yellow-700 font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                                        <span>Solicitar ahora</span>
+                                        <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                                         </svg>
                                     </div>
                                 </div>
